@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Car details | NCJ Auto LTD, Birmingham</title>
+<meta name="description" content="Used car details, specifications and features from NCJ Auto LTD in Hall Green, Birmingham.">
+<meta name="theme-color" content="#14213d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=Public+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+<script src="cars.js" defer></script>
+<script src="car.js" defer></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+ <div class="wrap bar">
+  <a class="logo" href="index.html" aria-label="NCJ Auto LTD home"><img src="img/ncj-logo.jpg" alt="NCJ Auto LTD" width="120" height="44"></a>
+  <nav id="nav" aria-label="Main">
+   <ul>
+    <li><a href="inventory.html" aria-current="page">Inventory</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#reviews">Reviews</a></li>
+    <li><a href="index.html#about">About us</a></li>
+    <li><a href="index.html#find-us">Find us</a></li>
+   </ul>
+  </nav>
+  <a class="btn btn-y hcall" href="tel:+447508551077">Call 07508 551077</a>
+  <button class="menu" id="menu" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span></button>
+ </div>
+</header>
+
+<main>
+ <section>
+  <div class="wrap">
+   <a class="back" href="inventory.html">&larr; Back to inventory</a>
+
+   <div id="notfound" hidden>
+    <h1>We couldn’t find that car</h1>
+    <p>It may have been sold. Have a look at the rest of our stock.</p>
+    <a class="btn btn-d" href="inventory.html">View all stock</a>
+   </div>
+
+   <div id="car" hidden>
+    <div class="cd-grid">
+     <div class="cd-gallery">
+      <img id="cd-img" alt="" width="800" height="600">
+      <div class="thumbs" id="cd-thumbs"></div>
+     </div>
+     <div class="cd-side">
+      <h1 id="cd-title"></h1>
+      <span class="plate" id="cd-price"></span>
+      <dl class="specs-list" id="cd-summary"></dl>
+      <div class="cta">
+       <a class="btn btn-y" id="cd-wa" href="#">Enquire on WhatsApp</a>
+       <a class="btn btn-d" href="tel:+447508551077">Call us</a>
+      </div>
+     </div>
+    </div>
+
+    <div class="cd-block" id="cd-specs-block">
+     <h2>Specifications</h2>
+     <dl class="spec-grid" id="cd-specs"></dl>
+    </div>
+
+    <div class="cd-block" id="cd-features-block">
+     <h2>Features</h2>
+     <ul class="checks" id="cd-features"></ul>
+    </div>
+
+    <div class="cd-block">
+     <h2>Vehicle enquiry</h2>
+     <form class="enq" id="enq">
+      <label>Your name<input name="fullname" required autocomplete="name"></label>
+      <label>Phone number<input name="phone" type="tel" required autocomplete="tel"></label>
+      <label>Message (optional)<textarea name="msg" rows="4"></textarea></label>
+      <button class="btn btn-y" type="submit">Send enquiry on WhatsApp</button>
+     </form>
+    </div>
+   </div>
+  </div>
+ </section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div>
+   <h3>NCJ Auto LTD</h3>
+   <p>Quality Japanese and local used cars and taxi rental in the West Midlands.</p>
+   <div class="social">
+    <a href="https://www.facebook.com/me/" aria-label="Facebook"><img src="img/facebook.png" alt="" width="28" height="28" loading="lazy"></a>
+    <a href="https://www.instagram.com" aria-label="Instagram"><img src="img/instagram.png" alt="" width="28" height="28" loading="lazy"></a>
+    <a href="https://wa.me/447508549886?text=Hi%20I%20am%20interested%20in%20a%20car" aria-label="WhatsApp"><img src="img/whatsapp.png" alt="" width="28" height="28" loading="lazy"></a>
+   </div>
+  </div>
+  <div>
+   <h3>Quick links</h3>
+   <ul><li><a href="inventory.html">Inventory</a></li><li><a href="index.html#services">Services</a></li><li><a href="index.html#about">About us</a></li><li><a href="index.html#find-us">Find us</a></li></ul>
+  </div>
+  <div>
+   <h3>Contact</h3>
+   <ul><li><a href="tel:+447508551077">+44 7508 551077</a></li><li><a href="mailto:ncjauto@gmail.com">ncjauto@gmail.com</a></li><li>Mon–Fri 9–6, Sat 10–4, Sun closed</li></ul>
+  </div>
+  <p class="legal">© 2026 NCJ Auto LTD. All rights reserved.</p>
+ </div>
+</footer>
+
+<div class="dock">
+ <a class="btn btn-d" href="tel:+447508551077">Call us</a>
+ <a class="btn btn-y" href="https://wa.me/447508549886?text=Hi%20I%20am%20interested%20in%20a%20car">WhatsApp</a>
+</div>
+
+</body>
+</html>

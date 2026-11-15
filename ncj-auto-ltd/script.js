@@ -6,3 +6,12 @@
  var d=String(new Date().getDay()),r=document.querySelector('#hours [data-d="'+d+'"]');
  if(r)r.classList.add("today");
 })();
+
+(function(){
+ document.querySelectorAll(".car").forEach(function(card){
+  var url="car.html?id="+card.querySelector("h3").textContent.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""),
+   link=card.querySelector('a[href="inventory.html"]'),btn=card.querySelector("[data-open]");
+  if(link)link.href=url;
+  if(btn)btn.addEventListener("click",function(){location.href=url});
+ });
+})();
